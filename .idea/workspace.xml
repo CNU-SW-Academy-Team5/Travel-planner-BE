@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6b46c93-cd6b-4837-bcea-8099216d73a8" name="Changes" comment="" />
+    <list default="true" id="b6b46c93-cd6b-4837-bcea-8099216d73a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swacademyteam5/travelplanner/TravelPlannerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swacademyteam5/travelplanner/TravelPlannerApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +25,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/kdhur/Documents/GitHub/Travel-planner-BE",
+    "last_opened_file_path": "D:/YejinGithub/Travel-planner-BE",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -36,6 +38,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673328968585</updated>
       <workItem from="1673328969774" duration="33000" />
+      <workItem from="1673330378306" duration="26000" />
     </task>
     <servers />
   </component>
