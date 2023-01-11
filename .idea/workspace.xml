@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6b46c93-cd6b-4837-bcea-8099216d73a8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Travel-planner-BE.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/swacademyteam5/travelplanner/TravelPlannerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/swacademyteam5/travelplanner/TravelPlannerApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +28,7 @@
   <component name="ProjectId" id="2K7cGqNszdSelcVPUqjyTkNsSLV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -50,12 +40,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/YejinGithub/Travel-planner-BE/spring.travel",
+    "last_opened_file_path": "/Users/kdhur/Documents/GitHub/Travel-planner-BE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "b9a344cb9c3afc4e0ca974bb441c77c4",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "1cb1b74f3431e2a097e3ac3266f5bf3a",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -80,6 +74,8 @@
       <workItem from="1673330378306" duration="519000" />
       <workItem from="1673330933609" duration="306000" />
       <workItem from="1673331260895" duration="26000" />
+      <workItem from="1673341673259" duration="46000" />
+      <workItem from="1673341782353" duration="70000" />
     </task>
     <servers />
   </component>
