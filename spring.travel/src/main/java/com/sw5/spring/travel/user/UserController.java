@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class UserController {
     private final UserService userService;
 
-    @GetMapping("/signup")
-    public String signup(User)
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
+
+    //@GetMapping("/signup")
+//    public String signup(User)
 }
