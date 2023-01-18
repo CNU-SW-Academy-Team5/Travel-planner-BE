@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/spring.travel/src/main/main.iml" filepath="$PROJECT_DIR$/spring.travel/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring.travel/src/test/test.iml" filepath="$PROJECT_DIR$/spring.travel/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Travel-planner-BE.iml" filepath="$PROJECT_DIR$/.idea/Travel-planner-BE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring.travel/spring.travel.iml" filepath="$PROJECT_DIR$/spring.travel/spring.travel.iml" />
     </modules>
   </component>
 </project>

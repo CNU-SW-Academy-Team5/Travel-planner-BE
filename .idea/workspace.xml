@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6b46c93-cd6b-4837-bcea-8099216d73a8" name="Changes" comment="">
+    <list default="true" id="380d4de5-d360-44ea-8c9a-e17b14139b73" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/TravelPlanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/maven_wrapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/Plan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,38 +38,28 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2K7cGqNszdSelcVPUqjyTkNsSLV" />
+  <component name="ProjectId" id="2KUlB0InUpNArPA9ejPAPTrLK8s" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/kdhur/Documents/GitHub/Travel-planner-BE",
+    "last_opened_file_path": "D:/YejinGithub/Travel-planner-BE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "1cb1b74f3431e2a097e3ac3266f5bf3a",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="TravelPlannerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Travel-planner-BE" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.swacademyteam5.travelplanner.TravelPlannerApplication" />
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring.travel" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sw5.spring.travel.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -65,17 +68,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b6b46c93-cd6b-4837-bcea-8099216d73a8" name="Changes" comment="" />
-      <created>1673328968585</created>
+      <changelist id="380d4de5-d360-44ea-8c9a-e17b14139b73" name="Changes" comment="" />
+      <created>1674036902218</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1673328968585</updated>
-      <workItem from="1673328969774" duration="33000" />
-      <workItem from="1673330378306" duration="519000" />
-      <workItem from="1673330933609" duration="306000" />
-      <workItem from="1673331260895" duration="26000" />
-      <workItem from="1673341673259" duration="46000" />
-      <workItem from="1673341782353" duration="70000" />
+      <updated>1674036902218</updated>
+      <workItem from="1674036904046" duration="893000" />
     </task>
     <servers />
   </component>
