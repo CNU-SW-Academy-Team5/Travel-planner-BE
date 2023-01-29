@@ -1,11 +1,15 @@
 package com.sw5.spring.travel.domain.plan;
 
 import com.sw5.spring.travel.domain.BaseEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+@Setter
+@Getter
 @Entity
 public class DetailedPlan extends BaseEntity {
     @Id
