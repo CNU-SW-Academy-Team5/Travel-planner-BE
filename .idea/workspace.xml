@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="380d4de5-d360-44ea-8c9a-e17b14139b73" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/DetailPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/DetailPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/Plan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/TravelPlanRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/TravelPlanRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +46,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/YejinGithub/Travel-planner-BE",
     "node.js.detected.package.eslint": "true",
