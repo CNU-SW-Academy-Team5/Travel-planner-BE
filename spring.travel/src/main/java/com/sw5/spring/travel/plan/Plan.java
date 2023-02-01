@@ -29,4 +29,40 @@ public class Plan {
         this.planName = planName;
         this.lastEdit = lastEdit;
     }
+
+    public UUID getPlanId() {
+        return planId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public String getPlanName() {
+        return planName;
+    }
+
+    public void setPlanName(String planName) {
+        this.planName = planName;
+    }
+
+    public String getLastEdit() {
+        return lastEdit;
+    }
+
+    public void setLastEdit(String lastEdit) {
+        this.lastEdit = lastEdit;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public List<DetailPlan> getDetailPlanList() {
+        return detailPlanList;
+    }
+
+    public void setDetailPlanList(List<DetailPlan> detailPlanList) {
+        this.detailPlanList = detailPlanList;
+    }
 }

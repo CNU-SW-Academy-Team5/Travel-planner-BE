@@ -14,7 +14,6 @@ public class UserService {
     public User create(String username, String email, String password) {
         final UUID id = UUID.randomUUID();
         User user = new User(id, username, email, password);
-
-        return user;
+        return userRepository.insert(user);
     }
 }
