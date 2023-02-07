@@ -5,8 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="380d4de5-d360-44ea-8c9a-e17b14139b73" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_0_31.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/repository/PlanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/service/PlanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring.travel/src/test/java/com/sw5/spring/travel/entity/PlanTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring.travel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/DetailPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/entity/DetailPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/entity/Plan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/plan/PlanService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/user/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/user/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/java/com/sw5/spring/travel/user/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.travel/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring.travel/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +42,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
+        <option value="com.haulmont.jpb.JpaRepository" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,6 +79,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "D:/YejinGithub/Travel-planner-BE",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -56,7 +89,34 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.sw5.spring.travel.service" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.sw5.spring.travel.entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PlanTest.createEntityTest">
+    <configuration name="PlanTest.createEntityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring.travel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sw5.spring.travel.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sw5.spring.travel.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.sw5.spring.travel.entity.PlanTest" />
+      <option name="METHOD_NAME" value="createEntityTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring.travel" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sw5.spring.travel.Application" />
@@ -64,6 +124,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PlanTest.createEntityTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
