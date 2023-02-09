@@ -18,7 +18,7 @@ class PlanTest {
 
     @Test
     public void createEntityTest(){
-        Plan plan = new Plan(UUID.randomUUID(), "userId", "제주", "lastEdit", new Date());
+        Plan plan = new Plan("planId", UUID.randomUUID(), "제주", "lastEdit", new Date());
         logger.info("planName ->{}", plan.getPlanName());
     }
 }
