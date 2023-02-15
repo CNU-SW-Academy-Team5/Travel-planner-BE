@@ -19,6 +19,7 @@ public class PlanConverter {
         plan.setEndDate(planDto.getEndDate());
         plan.setRegion(planDto.getRegion());
         plan.setCreatedAt(LocalDateTime.now());
+        plan.setLastEdited(LocalDateTime.now());
         //plan.setCreatedBy(planDto.getMemberDto().getName());
 
         return plan;
@@ -30,9 +31,10 @@ public class PlanConverter {
         detailedPlan.setStartTime(detailedPlanDto.getStartTime());
         detailedPlan.setEndTime(detailedPlanDto.getEndTime());
         detailedPlan.setLocation(detailedPlanDto.getLocation());
-        detailedPlanDto.setAddress(detailedPlanDto.getAddress());
-        detailedPlanDto.setMemo(detailedPlanDto.getMemo());
+        detailedPlan.setAddress(detailedPlanDto.getAddress());
+        detailedPlan.setMemo(detailedPlanDto.getMemo());
         detailedPlan.setCreatedAt(LocalDateTime.now());
+        detailedPlan.setLastEdited(LocalDateTime.now());
         //detailedPlan.setCreatedBy(planDto.getMemberDto().getName());
         detailedPlan.setPlan(this.convertPlan(detailedPlanDto.getPlanDto()));
 

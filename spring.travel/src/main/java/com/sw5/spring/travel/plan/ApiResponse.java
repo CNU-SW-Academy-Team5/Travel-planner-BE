@@ -29,4 +29,5 @@ public class ApiResponse<T> {
     public static <T> ApiResponse<T> fail(int statusCode, T data) {
         return new ApiResponse<>(statusCode, data);
     }
+
 }
