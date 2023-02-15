@@ -16,7 +16,6 @@ public class PlanController {
     @PostMapping("/plan")
     public ApiResponse<String> savePlan(@RequestBody PlanDto planDto) {
         String id = planService.createPlan(planDto);
-
         return ApiResponse.ok(id);
     }
 }
