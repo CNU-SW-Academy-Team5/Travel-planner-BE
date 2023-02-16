@@ -48,8 +48,8 @@ public class PlanController {
 
     @GetMapping("/plan/{id}")
     public ApiResponse<PlanDto> getPlanById(@PathVariable String id) throws NotFoundException {
-
-        return null;
+        PlanDto one = planServiceImpl.findOne(id);
+        return ApiResponse.ok(one);
     }
 
     @GetMapping("/plan-list")

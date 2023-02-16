@@ -10,15 +10,15 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PlanDto {
-    private String id;
-    private String name;
-    private LocalDate startDate;
-    private LocalDate endDate;
-    private Region region;
-    private String createdBy;
-    private LocalDateTime createdAt;
-    private LocalDateTime lastEdited;
-    //association
-    private List<DetailedPlanDto> detailedPlansDtos;
+    public class PlanDto {
+        private String id;
+        private String name;
+        private LocalDate startDate;
+        private LocalDate endDate;
+        private Region region;
+        private String createdBy;
+        private LocalDateTime createdAt;
+        private LocalDateTime lastEdited;
+        //association
+        private List<DetailedPlanDto> detailedPlansDtos;
 }
