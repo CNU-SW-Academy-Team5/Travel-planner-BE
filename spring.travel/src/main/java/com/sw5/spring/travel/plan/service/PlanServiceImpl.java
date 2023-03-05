@@ -8,6 +8,7 @@ import com.sw5.spring.travel.plan.converter.PlanConverter;
 import com.sw5.spring.travel.plan.dto.DetailedPlanDto;
 import com.sw5.spring.travel.plan.dto.PlanDto;
 import javassist.NotFoundException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.data.domain.Page;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import org.springframework.data.domain.Pageable;
 
+@Slf4j
 @Service
 public class PlanServiceImpl implements PlanService{
     private final PlanRepository planRepository;
@@ -29,7 +31,7 @@ public class PlanServiceImpl implements PlanService{
     }
 
     @Transactional
-    public String savePlan(PlanDto planDto) { //이후에 일행도 여기서 같이 저장?
+    public Long savePlan(PlanDto planDto) { //이후에 일행도 여기서 같이 저장?
         // dto -> entity
         Plan plan = planConverter.convertPlan(planDto);
         // persistence
@@ -62,7 +64,8 @@ public class PlanServiceImpl implements PlanService{
     }
 
     @Transactional
-    public Long countPlan() {
-        return planRepository.count();
+    public Page<DetailedPlanDto> findAllDetailedPlan(Pageable pageable) {
+        return detailedPlanRepository.findAll(pageable)
+                .map(planConverter::convertDetailedPlanDto);
     }
 }
