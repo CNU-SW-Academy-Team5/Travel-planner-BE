@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PlanDto {
-    private String id;
+    private Long id;
     private String name;
     private LocalDate startDate;
     private LocalDate endDate;

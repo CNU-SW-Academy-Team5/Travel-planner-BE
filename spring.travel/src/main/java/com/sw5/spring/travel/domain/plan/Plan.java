@@ -1,6 +1,7 @@
 package com.sw5.spring.travel.domain.plan;
 
 import com.sw5.spring.travel.domain.BaseEntity;
+import lombok.Generated;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,7 +17,8 @@ import java.util.List;
 public class Plan extends BaseEntity {
     @Id
     @Column(name = "id")
-    private String id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     @Column(name = "name", nullable = false)
     private String name;
     @Column(name = "start_date", nullable = false, columnDefinition = "TIMESTAMP")

@@ -10,9 +10,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
-import java.util.List;
-
 @RestController
 public class PlanController {
     PlanServiceImpl planServiceImpl;
@@ -33,13 +30,13 @@ public class PlanController {
     }
 
     @PostMapping("/plan")
-    public ApiResponse<String> savePlan(@RequestBody PlanDto planDto) {
-        String id = planServiceImpl.savePlan(planDto);
+    public ApiResponse<Long> savePlan(@RequestBody PlanDto planDto) {
+        Long id = planServiceImpl.savePlan(planDto);
 
         return ApiResponse.ok(id);
     }
 
-    @PostMapping("/detail-plan")
+    @PostMapping("/detailed-plan")
     public ApiResponse<Long> saveDetailedPlan(@RequestBody DetailedPlanDto detailedPlanDto) {
         Long id = planServiceImpl.saveDetailedPlan(detailedPlanDto);
 
@@ -48,8 +45,9 @@ public class PlanController {
 
     @GetMapping("/plan/{id}")
     public ApiResponse<PlanDto> getPlanById(@PathVariable String id) throws NotFoundException {
+        PlanDto one = planServiceImpl.findOne(id);
 
-        return null;
+        return ApiResponse.ok(one);
     }
 
     @GetMapping("/plan-list")
@@ -59,16 +57,10 @@ public class PlanController {
         return ApiResponse.ok(all);
     }
 
-    @GetMapping("/plan-count")
-    public ApiResponse<Long> getPlanCount() {
-        Long count = planServiceImpl.countPlan();
+    @GetMapping("/detailed-plan-list")
+    public ApiResponse<Page<DetailedPlanDto>> getAllDetailedPlan(Pageable pageable) {
+        Page<DetailedPlanDto> all = planServiceImpl.findAllDetailedPlan(pageable);
 
-        return ApiResponse.ok(count);
-    }
-
-    //test
-    @GetMapping("/hello")
-    public List<String> Hello() {
-        return Arrays.asList("서버 포트는 8080", "리액트 포트는 3000");
+        return ApiResponse.ok(all);
     }
 }
