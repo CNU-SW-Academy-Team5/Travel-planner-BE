@@ -1,0 +1,15 @@
+#version: "3.8"
+#services:
+#  mysql:
+#    image: mysql:8.0
+#    container_name: Travel_Planner
+##    volumes:
+##      - todo-mysql-data:/ var/lib/mysql
+#    ports:
+#      - "3306:3306"
+#    environment:
+#      - MYSQL_ROOT_USER=root
+#      - MYSQL_ROOT_PASSWORD=sw5
+#      - MYSQL_DATABASE=travel
+#      - TZ=Asia/Seoul
+#    restart: always

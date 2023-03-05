@@ -15,4 +15,6 @@ public class BaseEntity {
     private String createdBy;
     @Column(name = "created_at", columnDefinition = "TIMESTAMP")
     private LocalDateTime createdAt;
+    @Column(name = "last_edited", columnDefinition = "TIMESTAMP")
+    private LocalDateTime lastEdited;
 }
