@@ -1,9 +1,13 @@
 package com.sw5.spring.travel.plan.controller;
 
+import com.sw5.spring.travel.domain.user.User;
 import com.sw5.spring.travel.plan.ApiResponse;
 import com.sw5.spring.travel.plan.dto.DetailedPlanDto;
 import com.sw5.spring.travel.plan.dto.PlanDto;
+import com.sw5.spring.travel.plan.dto.UserDto;
+import com.sw5.spring.travel.plan.dto.UserLoginDto;
 import com.sw5.spring.travel.plan.service.PlanServiceImpl;
+import com.sw5.spring.travel.plan.service.UserServiceImpl;
 import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -13,6 +17,9 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class PlanController {
     PlanServiceImpl planServiceImpl;
+
+    @Autowired
+    UserServiceImpl userService;
 
     @Autowired
     public PlanController(PlanServiceImpl planServiceImpl) {
@@ -46,7 +53,6 @@ public class PlanController {
     @GetMapping("/plan/{id}")
     public ApiResponse<PlanDto> getPlanById(@PathVariable String id) throws NotFoundException {
         PlanDto one = planServiceImpl.findOne(id);
-
         return ApiResponse.ok(one);
     }
 
@@ -60,7 +66,24 @@ public class PlanController {
     @GetMapping("/detailed-plan-list")
     public ApiResponse<Page<DetailedPlanDto>> getAllDetailedPlan(Pageable pageable) {
         Page<DetailedPlanDto> all = planServiceImpl.findAllDetailedPlan(pageable);
-
         return ApiResponse.ok(all);
+    }
+    
+    @GetMapping("/login")
+    public ApiResponse<String> login(@RequestBody UserLoginDto loginDto){
+        String userId = userService.login(loginDto);
+        return ApiResponse.ok(userId);
+    }
+
+    @GetMapping("/user-name/{userName}")
+    public ApiResponse<UserDto> getUserByName(@PathVariable String userName) throws NotFoundException {
+        UserDto user = userService.findOneUser(userName);
+        return ApiResponse.ok(user);
+    }
+
+    @GetMapping("/signup")
+    public ApiResponse<String> saveUser(@RequestBody UserDto userDto){
+        String userId = userService.saveUser(userDto);
+        return ApiResponse.ok(userId);
     }
 }
