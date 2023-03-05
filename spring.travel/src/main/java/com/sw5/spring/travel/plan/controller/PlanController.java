@@ -37,13 +37,13 @@ public class PlanController {
     }
 
     @PostMapping("/plan")
-    public ApiResponse<String> savePlan(@RequestBody PlanDto planDto) {
-        String id = planServiceImpl.savePlan(planDto);
+    public ApiResponse<Long> savePlan(@RequestBody PlanDto planDto) {
+        Long id = planServiceImpl.savePlan(planDto);
 
         return ApiResponse.ok(id);
     }
 
-    @PostMapping("/detail-plan")
+    @PostMapping("/detailed-plan")
     public ApiResponse<Long> saveDetailedPlan(@RequestBody DetailedPlanDto detailedPlanDto) {
         Long id = planServiceImpl.saveDetailedPlan(detailedPlanDto);
 
@@ -63,13 +63,12 @@ public class PlanController {
         return ApiResponse.ok(all);
     }
 
-    @GetMapping("/plan-count")
-    public ApiResponse<Long> getPlanCount() {
-        Long count = planServiceImpl.countPlan();
-
-        return ApiResponse.ok(count);
+    @GetMapping("/detailed-plan-list")
+    public ApiResponse<Page<DetailedPlanDto>> getAllDetailedPlan(Pageable pageable) {
+        Page<DetailedPlanDto> all = planServiceImpl.findAllDetailedPlan(pageable);
+        return ApiResponse.ok(all);
     }
-
+    
     @GetMapping("/login")
     public ApiResponse<String> login(@RequestBody UserLoginDto loginDto){
         String userId = userService.login(loginDto);
