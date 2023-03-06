@@ -36,7 +36,6 @@ public class PlanServiceImpl implements PlanService{
         Plan plan = planConverter.convertPlan(planDto);
         // persistence
         Plan entity = planRepository.save(plan);
-
         return entity.getId();
     }
 

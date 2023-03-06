@@ -1,10 +1,7 @@
 package com.sw5.spring.travel.plan.controller;
 
 import com.sw5.spring.travel.plan.ApiResponse;
-import com.sw5.spring.travel.plan.dto.DetailedPlanDto;
-import com.sw5.spring.travel.plan.dto.PlanDto;
-import com.sw5.spring.travel.plan.dto.UserDto;
-import com.sw5.spring.travel.plan.dto.UserLoginDto;
+import com.sw5.spring.travel.plan.dto.*;
 import com.sw5.spring.travel.plan.service.PlanServiceImpl;
 import com.sw5.spring.travel.plan.service.UserServiceImpl;
 import javassist.NotFoundException;
@@ -69,8 +66,8 @@ public class PlanController {
     }
     
     @GetMapping("/login")
-    public ApiResponse<String> login(@RequestBody UserLoginDto loginDto){
-        String userId = userService.login(loginDto);
+    public ApiResponse<Long> login(@RequestBody UserLoginDto loginDto){
+        Long userId = userService.login(loginDto);
         return ApiResponse.ok(userId);
     }
 
@@ -81,8 +78,8 @@ public class PlanController {
     }
 
     @PostMapping("/signup")
-    public ApiResponse<String> saveUser(@RequestBody UserDto userDto){
-        String userId = userService.saveUser(userDto);
+    public ApiResponse<Long> saveUser(@RequestBody UserDto userDto){
+        Long userId = userService.saveUser(userDto);
         return ApiResponse.ok(userId);
     }
 }
