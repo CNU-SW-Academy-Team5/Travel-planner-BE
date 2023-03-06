@@ -81,7 +81,7 @@ public class PlanController {
         return ApiResponse.ok(user);
     }
 
-    @GetMapping("/signup")
+    @PostMapping("/signup")
     public ApiResponse<String> saveUser(@RequestBody UserDto userDto){
         String userId = userService.saveUser(userDto);
         return ApiResponse.ok(userId);
