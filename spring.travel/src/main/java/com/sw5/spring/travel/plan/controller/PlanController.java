@@ -1,6 +1,5 @@
 package com.sw5.spring.travel.plan.controller;
 
-import com.sw5.spring.travel.domain.user.User;
 import com.sw5.spring.travel.plan.ApiResponse;
 import com.sw5.spring.travel.plan.dto.*;
 import com.sw5.spring.travel.plan.service.PlanServiceImpl;
@@ -15,12 +14,12 @@ import org.springframework.web.bind.annotation.*;
 public class PlanController {
     PlanServiceImpl planServiceImpl;
 
-    @Autowired
     UserServiceImpl userService;
 
     @Autowired
-    public PlanController(PlanServiceImpl planServiceImpl) {
+    public PlanController(PlanServiceImpl planServiceImpl, UserServiceImpl userService) {
         this.planServiceImpl = planServiceImpl;
+        this.userService = userService;
     }
 
     @ExceptionHandler(NotFoundException.class)
