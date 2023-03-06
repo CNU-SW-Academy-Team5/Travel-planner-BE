@@ -1,0 +1,9 @@
+= 테스트문서
+:toc: left
+
+== 테스트API
+.Http Request
+include::{snippets}/plan-save/http-request.adoc[]
+
+.Http Response
+include::{snippets}/plan-save/http-response.adoc[]

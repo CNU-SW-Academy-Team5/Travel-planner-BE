@@ -57,7 +57,7 @@ public class PlanServiceImpl implements PlanService{
     }
 
     @Transactional
-    public PlanDto findOne(String id) throws NotFoundException {
+    public PlanDto findOne(Long id) throws NotFoundException {
         return planRepository.findById(id)
                 .map(planConverter::convertPlanDto)
                 .orElseThrow(() -> new NotFoundException("cannot find plan"));
