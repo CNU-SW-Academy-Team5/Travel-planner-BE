@@ -14,7 +14,7 @@ import java.util.Objects;
 public class DetailedPlan extends BaseEntity {
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(name = "start_time", nullable = false, columnDefinition = "TIMESTAMP")
     private LocalDateTime startTime;
