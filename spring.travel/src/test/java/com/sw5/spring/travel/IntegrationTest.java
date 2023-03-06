@@ -5,20 +5,29 @@ import com.sw5.spring.travel.domain.plan.Region;
 import com.sw5.spring.travel.plan.dto.DetailedPlanDto;
 import com.sw5.spring.travel.plan.dto.PlanDto;
 import com.sw5.spring.travel.plan.service.PlanServiceImpl;
+import org.aspectj.lang.annotation.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;
 import org.springframework.http.MediaType;
+import org.springframework.restdocs.JUnitRestDocumentation;
+import org.springframework.restdocs.RestDocumentationContextProvider;
+import org.springframework.restdocs.RestDocumentationExtension;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
+import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.documentationConfiguration;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -27,16 +36,25 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @SpringBootTest
 @TestPropertySource("classpath:application-test.yml")
+@ExtendWith(RestDocumentationExtension.class)
 public class IntegrationTest {
     private final PlanServiceImpl planService;
-    private final MockMvc mockMvc;
+    private MockMvc mockMvc;
     private final ObjectMapper objectMapper;
+
 
     @Autowired
     public IntegrationTest(PlanServiceImpl planService, MockMvc mockMvc, ObjectMapper objectMapper) {
         this.planService = planService;
         this.mockMvc = mockMvc;
         this.objectMapper = objectMapper;
+    }
+
+    @BeforeEach
+    public void setUp(WebApplicationContext webApplicationContext, RestDocumentationContextProvider restDocumentation) {
+        this.mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext)
+                .apply(documentationConfiguration(restDocumentation))
+                .build();
     }
 
     @Test
