@@ -6,7 +6,7 @@ import lombok.*;
 @Getter
 @AllArgsConstructor
 public class UserDto {
-    private String id;
+    private Long id;
     private String email;
     private String name;
     private String password;

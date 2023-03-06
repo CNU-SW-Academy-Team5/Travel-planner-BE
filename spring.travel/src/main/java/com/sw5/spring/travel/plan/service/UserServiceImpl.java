@@ -23,15 +23,17 @@ public class UserServiceImpl implements UserService{
 
     @Transactional
     @Override
-    public String login(UserLoginDto loginDto) {
-        User user = userRepository.findById(loginDto.getEmail()).orElse(null);
+    public Long login(UserLoginDto loginDto) {
+        User user = userRepository.findByEmail(loginDto.getEmail()).orElse(null);
         if(user.getPassword().equals(loginDto.getPassword())){
             return user.getId();
         }
         return null;
     }
 
-    public String saveUser(UserDto userDto){
+    @Transactional
+    @Override
+    public Long saveUser(UserDto userDto){
         User user = userConverter.convertUser(userDto);
         User entity = userRepository.save(user);
         return entity.getId();

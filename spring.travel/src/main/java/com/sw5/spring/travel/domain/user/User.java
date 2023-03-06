@@ -13,7 +13,8 @@ import javax.persistence.*;
 public class User extends BaseEntity {
     @Id
     @Column(name = "id")
-    private String id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     @Column(name = "email", nullable = false)
     private String email;

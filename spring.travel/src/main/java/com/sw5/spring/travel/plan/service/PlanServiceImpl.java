@@ -36,7 +36,6 @@ public class PlanServiceImpl implements PlanService{
         Plan plan = planConverter.convertPlan(planDto);
         // persistence
         Plan entity = planRepository.save(plan);
-
         return entity.getId();
     }
 
@@ -57,7 +56,7 @@ public class PlanServiceImpl implements PlanService{
     }
 
     @Transactional
-    public PlanDto findOne(String id) throws NotFoundException {
+    public PlanDto findOne(Long id) throws NotFoundException {
         return planRepository.findById(id)
                 .map(planConverter::convertPlanDto)
                 .orElseThrow(() -> new NotFoundException("cannot find plan"));
